@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   font-family: Roboto, sans-serif;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 *, *::before, *::after {
@@ -12,38 +12,42 @@ body {
   margin: 0;
 }
 
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .img-flex {
   display: block;
   width: 100%;
 }
 
-.banner {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  max-height: 500px;
+.img-hero {
+  display: inline-flex;
+  width: 100%;
   max-width: 45em;
+}
+
+.banner-img {
+  max-height: 500px;
   overflow: hidden;
 }
 
 .content {
   position: absolute;
-  display: inline;
+  display: flex;
   left: 50%;
-  transform: translateX(-50%);
-  align-items: center;
-  flex-wrap: wrap;
-  text-align: left;
-  top: auto;
-}
-
-.img-hero {
-  width: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .text {
-  display: inline;
+  text-align: left;
+  width: 100%;
+  max-width: 45em;
+  padding: 1.5rem;
 }
 
 h2 {
