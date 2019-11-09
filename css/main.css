@@ -30,9 +30,14 @@ p {
   display: inline-block;
 }
 
-.hero {
-  display: inline;
+.img-div {
   width: 100%;
+}
+
+.hero {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .banner {
@@ -40,6 +45,10 @@ p {
   max-height: 500px;
   overflow: hidden;
   justify-content: flex-start;
+}
+
+.text {
+  padding: 1.5rem;
 }
 
 .content {
